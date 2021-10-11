@@ -4,6 +4,8 @@ on: [push, pull_request]
 
 jobs:
   validate_extensions:
+    permissions:
+      contents: read
     name: node validate-extensions
     runs-on: ubuntu-latest
     steps:
