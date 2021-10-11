@@ -13,6 +13,8 @@ on:
 
 jobs:
   publish_extensions:
+    permissions:
+      contents: read
     env:
       FAILED_EXTENSIONS: ${{ github.event.inputs.failedExtensions }}
     name: node publish-extensions
