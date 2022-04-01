@@ -12,6 +12,8 @@ on:
 
 jobs:
   publish:
+    permissions:
+      contents: none
     name: node publish-extensions
     runs-on: ubuntu-latest
     steps:
