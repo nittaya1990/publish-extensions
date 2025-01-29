@@ -1,6 +1,6 @@
-name: Add an extension
-description: I want an extension to be published via this repo
-title: "[extension.id]: Publish to Open VSX"
+name: Add an unmaintained extension
+description: I want an unmaintained extension to be published
+title: "[extension.id]: Publish to Open VSX [unmaintained]"
 labels: ["extension"]
 assignees: ["filiptronicek"]
 body:
@@ -14,6 +14,11 @@ body:
           required: true
         - label: This extension has an [OSI-approved OSS license](https://opensource.org/licenses)
           required: true
+  - type: textarea
+    id: buildsteps
+    attributes:
+      label: How to build the extension?
+      description: Please write down the commands and/or actions needed to produce a `.vsix` file for this extension.
   - type: textarea
     id: notes
     attributes:
